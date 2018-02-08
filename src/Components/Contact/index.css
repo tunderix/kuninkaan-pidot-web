@@ -51,11 +51,19 @@
 }
 
 .SocialMedia {
-  background-color: lightgray;
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
 .SocialButton {
   margin: 4px;
+}
+
+.contact-container{
+  background-color: beige;
+  height: 100;
+  width: 100;
+  margin: 20;
+  textAlign: 'center';
+  display: 'inline-block';
 }

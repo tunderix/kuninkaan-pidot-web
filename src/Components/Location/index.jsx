@@ -36,7 +36,7 @@ class Location extends React.Component {
 
         return (
             <div className="Section Location">
-            <h2>Kalastuspuistossa</h2>
+            <h2>Imatran Kalastuspuistossa</h2>
                 <KMapComponent
                     isMarkerShown={this.state.isMarkerShown}>
                 </KMapComponent>

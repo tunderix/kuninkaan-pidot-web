@@ -1,5 +1,13 @@
 import React from "react";
 import './index.css';
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table';
 
 class Time extends React.Component {
     constructor(props) {
@@ -36,19 +44,24 @@ class Time extends React.Component {
     render() {
         return(
             <div className="Section Time">
-                <h2>Tapahtumaan joutuu vielä odottamaan</h2>
-                <div className="Clock-days">
-                    {this.leading0(this.state.days)} päivää
-                </div>
-                <div className="Clock-hours">
-                    {this.leading0(this.state.hours)} tuntia
-                </div>
-                <div className="Clock-minutes">
-                    {this.leading0(this.state.minutes)} minuuttia
-                </div>
-                <div className="Clock-seconds">
-                    {this.leading0(this.state.seconds)} sekunttia
-                </div>
+                <table>
+                    <tr className="Clock-days">
+                        <td>{this.leading0(this.state.days)}</td>
+                        <td>Päivää</td> 
+                    </tr>
+                    <tr className="Clock-hours">
+                        <td>{this.leading0(this.state.hours)}</td>
+                        <td>Tuntia</td> 
+                    </tr>
+                    <tr className="Clock-minutes">
+                        <td>{this.leading0(this.state.minutes)}</td>
+                        <td>Minuuttia</td> 
+                    </tr>
+                    <tr className="Clock-seconds">
+                        <td>{this.leading0(this.state.seconds)}</td>
+                        <td>Sekunttia</td> 
+                    </tr>
+                </table>
             </div>
         );
     }

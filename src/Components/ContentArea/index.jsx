@@ -5,6 +5,7 @@ import Location from "../Location";
 import Time from "../Time";
 import Contents from "../Contents";
 import Contact from "../Contact";
+import Gallery from "../Gallery";
 
 class ContentArea extends React.Component {
     
@@ -18,6 +19,7 @@ class ContentArea extends React.Component {
             <div className="Content-Area">
                 <Contents/>
                 <Time deadline={ this.state.deadline }/>
+                <Gallery/>
                 <Location/>
                 <Contact/>
             </div>

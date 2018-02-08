@@ -4,6 +4,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import ContentArea from "../ContentArea";
 import Plx from 'react-plx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class Main extends React.Component {
     constructor(props){
@@ -26,7 +27,7 @@ class Main extends React.Component {
                 },
                 {
                   startValue: 1,
-                  endValue: 1.3,
+                  endValue: 1.1,
                   property: "scale"
                 }
               ]
@@ -34,11 +35,11 @@ class Main extends React.Component {
         ];
         const plxBg2 = [
             {
-                start: 'self', // starts when plx's element enters the viewport
+                start: 600, // starts when plx's element enters the viewport
               end: 0,
               properties: [
                 {
-                    startValue: 100,
+                    startValue: 1000,
                     endValue: 0,
                     property: "translateY"
                 }
@@ -77,23 +78,25 @@ class Main extends React.Component {
         const styleBg2 = this.state.styleBg2;
         return (
             <div className="Main-Body">
-                <div className="Backgrounds">
-                    <Plx
-                        parallaxData={ plxBg1 }
-                        style={styleBg1}
-                        className="bg1"
-                    >
-                    </Plx>
-                    <Plx
-                        parallaxData={ plxBg2 }
-                        style={styleBg2}
-                        className="bg2"
-                    >
-                    </Plx>
-                </div>
-                <ContentArea/>
-                <Header/>
-                <Footer/>
+                <MuiThemeProvider>
+                    <div className="Backgrounds">
+                        <Plx
+                            parallaxData={ plxBg1 }
+                            style={styleBg1}
+                            className="bg1"
+                        >
+                        </Plx>
+                        <Plx
+                            parallaxData={ plxBg2 }
+                            style={styleBg2}
+                            className="bg2"
+                        >
+                        </Plx>
+                    </div>
+                    <ContentArea/>
+                    <Header/>
+                    <Footer/>
+                </MuiThemeProvider>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import React from "react";
-
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
 class ContactForm extends React.Component {
   constructor() {
     super();
@@ -18,21 +19,20 @@ class ContactForm extends React.Component {
     return (
       <div className="ContactForm">
         <form onSubmit={this.handleSubmit}>
-          <h3 htmlFor="name">Nimesi</h3>
-          <input id="name" name="name" type="text" />
-          <h3 htmlFor="contact">Yhteystietosi</h3>
-          <input id="contact" name="contact" type="text" />
-          <h3 htmlFor="title">Mitäs läksit?</h3>
-          <input id="title" name="title" type="text" />
-          <h3 htmlFor="what">A-a-a-aaasiaaa?</h3>
-          <textarea id="what" name="what" type="text" />
-          <div>
-            <button>Send data!</button>
-          </div>
+          <TextField
+              hintText="Nimesi"
+              floatingLabelText="Nimesi"
+              onChange = {(event,newValue) => this.setState({username:newValue})}
+              />
+          <TextField
+              hintText="Sähköposti"
+              floatingLabelText="Sähköposti"
+              onChange = {(event,newValue) => this.setState({username:newValue})}
+              />
+          <RaisedButton label="Submit" primary={true} onClick={(event) => this.handleSubmit(event)}/>
         </form>
       </div>
     );
   }
 }
-
 export default ContactForm;
