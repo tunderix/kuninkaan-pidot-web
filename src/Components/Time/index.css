@@ -1,0 +1,16 @@
+.Clock-days {
+  font-weight:normal;color:lightgoldenrodyellow;letter-spacing:-1pt;word-spacing:13pt;font-size:56px;text-align:center;font-family:helvetica, sans-serif;line-height:1;
+}
+.Clock-hours {
+  font-weight:normal;color:lightgoldenrodyellow;letter-spacing:0pt;word-spacing:13pt;font-size:46px;text-align:center;font-family:helvetica, sans-serif;line-height:1;
+}
+.Clock-minutes {
+  font-weight:normal;color:lightgoldenrodyellow;letter-spacing:1pt;word-spacing:13pt;font-size:26px;text-align:center;font-family:helvetica, sans-serif;line-height:1;
+}
+.Clock-seconds {
+  font-weight:normal;color:lightgoldenrodyellow;letter-spacing:3pt;word-spacing:13pt;font-size:16px;text-align:center;font-family:helvetica, sans-serif;line-height:1;
+}
+
+.Time {
+  
+}

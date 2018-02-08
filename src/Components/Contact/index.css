@@ -1,0 +1,61 @@
+
+.ContactForm {
+  color: white;
+}
+
+.ContactForm form {
+  margin: auto;
+  position: relative;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ContactForm textarea#feedback {
+  width: 80%;
+  height: 150px;
+}
+
+.ContactForm button { 
+  margin: 12px;
+  padding: 12px;
+}
+
+.FormNode {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.FormNode input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.FormNode label {
+  padding-right: 6px;
+}
+
+.Socials {
+  padding: 28px;
+}
+
+.SocialMedia {
+  background-color: lightgray;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.SocialButton {
+  margin: 4px;
+}
