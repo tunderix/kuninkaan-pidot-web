@@ -16,11 +16,14 @@ const style = {
 class Description extends React.Component {
     
     render() {
-        const kuvaus = "Imatralla järjestetään kolmatta kertaa keskiaikateemainen tapahtuma, jossa on ripaus miekkoja ja magiaa. Luvassa on markkinahumua, ritareita kiiltävissä haarniskoissaan, taistelunäytöksiä ja ainutkertainen lohikäärmeen kohtaamiskoulu. Kaiken tämän sitoo yhteen jännittävä tarina, joka herättää tapahtuman henkiin. Tule kokemaan ja näkemään juonittelua, salaperäisiä hahmoja, tanssia, laulua ja sankareita toimissaan. Kuninkaan pitoihin on kutsuttu koko kansa, ja tekemistä sekä kokemista on aina perheen pienimmistä vanhimmille. Tässä tapahtumassa asiakas voi olla joko katsoja tai osallistuja valintansa mukaan.";
+        const kuvaus = "   ";
         return(
             <div className="SectDesc">
                 <Paper style={style} zDepth={4}>
-                    <p>{kuvaus}</p>
+                    <p>Imatralla järjestetään kolmatta kertaa keskiaikateemainen tapahtuma, jossa on ripaus miekkoja ja magiaa.</p>
+                    <p>Luvassa on markkinahumua, ritareita kiiltävissä haarniskoissaan, taistelunäytöksiä ja ainutkertainen lohikäärmeen kohtaamiskoulu.</p>
+                    <p>Kaiken tämän sitoo yhteen jännittävä tarina, joka herättää tapahtuman henkiin.</p>
+                    <p>Tule kokemaan ja näkemään juonittelua, salaperäisiä hahmoja, tanssia, laulua ja sankareita toimissaan. Kuninkaan pitoihin on kutsuttu koko kansa, ja tekemistä sekä kokemista on aina perheen pienimmistä vanhimmille. Tässä tapahtumassa asiakas voi olla joko katsoja tai osallistuja valintansa mukaan.</p>
                 </Paper>
             </div>
         );
