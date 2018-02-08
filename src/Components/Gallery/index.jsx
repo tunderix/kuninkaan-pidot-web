@@ -2,15 +2,6 @@ import React from "react";
 import './index.css';
 var Carousel = require('nuka-carousel');
 class Gallery extends React.Component {
-    
-
-  
-    myFunc1() {
-    }  
-    myFunc2() {
-    }  
-    myFunc3() {
-    }
     render() {
         const images = ['../../../src/Images/bg1.jpg', '../../../src/Images/bg2.jpg', '../../../src/Images/bg3.jpg'];
         return(
